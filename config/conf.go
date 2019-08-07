@@ -42,3 +42,15 @@ func ReadConfigFiles(path string) {
 func GetPort() string {
 	return viper.GetString("API.port")
 }
+
+func GetLogFile() string {
+	return viper.GetString("logger.file")
+}
+
+func GetLogMaxSize() int {
+	return viper.GetInt("logger.maxsize")
+}
+
+func GetLogMaxAge() int {
+	return viper.GetInt("logger.maxage")
+}
